@@ -30,12 +30,8 @@ class BurgerBuilder extends Component {
             meat: 0            
         },
         totalPrice: 4,
-<<<<<<< HEAD
         purchasable: false,
         purchasing: false
-=======
-        purchasable: false
->>>>>>> ce58449194c5b13cedd272e9cdc018c03cb4870f
     }
 
     updatePurchaseState (ingredients) {
@@ -79,7 +75,6 @@ class BurgerBuilder extends Component {
         const newPrice = oldPrice - priceDeduction;
         this.setState({totalPrice: newPrice, ingredients: updatedIngredients})
         this.updatePurchaseState(updatedIngredients);
-<<<<<<< HEAD
     }
 
     purchaseHandler = () => {
@@ -92,8 +87,6 @@ class BurgerBuilder extends Component {
 
     purchaseContinueHandler = () => {
         alert('You have purchased a Burger');
-=======
->>>>>>> ce58449194c5b13cedd272e9cdc018c03cb4870f
     }
 
     render () {
@@ -118,10 +111,7 @@ class BurgerBuilder extends Component {
                     ingredientRemoved={this.removeIngredientHandler}
                     disabled={disableInfo} 
                     purchasable={this.state.purchasable}
-<<<<<<< HEAD
                     ordered={this.purchaseHandler}
-=======
->>>>>>> ce58449194c5b13cedd272e9cdc018c03cb4870f
                     price={this.state.totalPrice}/>
             </Aux>
         );
