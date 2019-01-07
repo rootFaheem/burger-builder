@@ -3,6 +3,13 @@
     padding: 0;
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: left;
     height: 100%;
+}
+
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
 }
