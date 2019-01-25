@@ -2,7 +2,7 @@
     margin: 10px 0;
     box-sizing: border-box;
     display: block;
-    height: 100%;
+    width: 100%;
 }
 
 .NavigationItem a {
@@ -14,10 +14,11 @@
 }
 
 .NavigationItem a:hover,
-.NavigationItem a:hover,
-.NavigationItem a:active {
-    color:#40A4C8;
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: #40A4C8;
 }
+
 @media (min-width: 500px) {
     .NavigationItem {
         margin: 0;
@@ -29,13 +30,14 @@
     
     .NavigationItem a {
         color: white;
-        height:100%;
-        padding:16px 10px;
+        height: 100%;
+        padding: 16px 10px;
         border-bottom: 4px solid transparent;
     }
+    
     .NavigationItem a:hover,
     .NavigationItem a:active,
-    .NavigationItem a:active {
+    .NavigationItem a.active {
         background-color: #8F5C2C;
         border-bottom: 4px solid #40A4C8;
         color: white;

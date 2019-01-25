@@ -10,12 +10,11 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    z-index: 90
+    z-index: 90;
 }
 
-Toolbar nav {
+.Toolbar nav {
     height: 100%;
-    
 }
 
 .Logo {
